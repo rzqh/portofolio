@@ -11,7 +11,9 @@ interface SocialMediaItem {
   Mengikuti?: number; // Optional property
   Suka?: string; // Optional property
   Repository?: number; // Optional property
-  Commit?: number; 
+  Commit?: number; // New property for commit count
+  Post?: number; // New property for post count
+  Published?: number; // New property for published count
   Link: string;
   Username?: string;
 }
@@ -39,6 +41,8 @@ const infinitysosmed: InfinitySosmed = {
         'https://miro.medium.com/v2/resize:fill:64:64/1*WpU_NWnQVDEwH9dKi4JjoQ.jpeg',
       Pengikut: 3,
       Username: 'Rizqi Hasanuddin',
+      Post: 3, 
+      Published: 1, 
       Link: 'https://medium.com/@rizqih',
     },
   ],
@@ -47,7 +51,7 @@ const infinitysosmed: InfinitySosmed = {
       Profile: 'https://avatars.githubusercontent.com/u/85202182?s=400&u=f2b24bbf716b35c63be426fb51dc64d7d6fb0b2e&v=4',
       Pengikut: 5,      
       Repository: 45,
-      Commit: 324, 
+      Commit: 120, // Hardcoded commit count
       Username: 'rzqh',
       Link: 'https://github.com/rzqh',
     },
@@ -265,6 +269,8 @@ const InfiniteScroll: React.FC = () => {
                   <div>{item.Pengikut} Pengikut</div>
                   {'Mengikuti' in item && <div>{item.Mengikuti} Mengikuti</div>}
                   {'Commit' in item && <div>{item.Commit} Commit</div>} {/* Display commit count */}
+                  {'Post' in item && <div>{item.Post} Post</div>} {/* Display post count */}
+                  {'Published' in item && <div>{item.Published} Published</div>} {/* Display published count */}
                 </div>
               </a>
             </div>
