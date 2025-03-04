@@ -5,10 +5,13 @@ export const DATA = {
   name: 'Rizqi Hasanuddin',
   initials: 'DV',
   location: 'Malang,idn',
-  description: `College Student turned Frontend Engineer, Active on <a class="underline decoration-blue-500">Google Developer Group Surabaya</a>, <a class="underline decoration-pink-500">TikTok</a>,<a class="underline decoration-pink-500">Linkedin</a>,and <a class="underline decoration-blue-500">Medium</a>.`,
+  description: `Passionate undergraduate Informatics Engineer with a knack for 
+  <a class="underline decoration-blue-500">Artificial Intelligence</a>
+  and a love for all things 
+  <a class="underline decoration-pink-500">Data</a>`,
   summary:
     'At the age of 20, I am interested in spending 10 hours every day to study from June 12, 2024 until now, interested in exploring different design styles and following design and technology trends for software development',
-  avatarUrl: '/met.jpeg',
+  avatarUrl: '/gwe.jpeg',
   skills: [
     'Copilot',
 
