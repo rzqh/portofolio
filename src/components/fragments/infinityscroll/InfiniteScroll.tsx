@@ -11,6 +11,7 @@ interface SocialMediaItem {
   Mengikuti?: number; // Optional property
   Suka?: string; // Optional property
   Repository?: number; // Optional property
+  Commit?: number; 
   Link: string;
   Username?: string;
 }
@@ -29,7 +30,6 @@ const infinitysosmed: InfinitySosmed = {
         'https://media.licdn.com/dms/image/v2/D5603AQGrP3mwFwXY4A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1703486415710?e=1746662400&v=beta&t=ZTOPeAt1pO_7CZvEVFzZLg2ta4tHuRFYVP3OpQRFV-g',
       Pengikut: 2034,      
       Username: 'Rizqi Hasanuddin',
-
       Link: 'https://www.linkedin.com/in/rizqi-hasanuddin/',
     },
   ],
@@ -39,7 +39,6 @@ const infinitysosmed: InfinitySosmed = {
         'https://miro.medium.com/v2/resize:fill:64:64/1*WpU_NWnQVDEwH9dKi4JjoQ.jpeg',
       Pengikut: 3,
       Username: 'Rizqi Hasanuddin',
-
       Link: 'https://medium.com/@rizqih',
     },
   ],
@@ -48,6 +47,7 @@ const infinitysosmed: InfinitySosmed = {
       Profile: 'https://avatars.githubusercontent.com/u/85202182?s=400&u=f2b24bbf716b35c63be426fb51dc64d7d6fb0b2e&v=4',
       Pengikut: 5,      
       Repository: 45,
+      Commit: 324, 
       Username: 'rzqh',
       Link: 'https://github.com/rzqh',
     },
@@ -264,6 +264,7 @@ const InfiniteScroll: React.FC = () => {
                   {' '}
                   <div>{item.Pengikut} Pengikut</div>
                   {'Mengikuti' in item && <div>{item.Mengikuti} Mengikuti</div>}
+                  {'Commit' in item && <div>{item.Commit} Commit</div>} {/* Display commit count */}
                 </div>
               </a>
             </div>
