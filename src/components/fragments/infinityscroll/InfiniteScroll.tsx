@@ -11,7 +11,7 @@ interface SocialMediaItem {
   Mengikuti?: number; // Optional property
   Suka?: string; // Optional property
   Repository?: number; // Optional property
-  Commit?: number; // New property for commit count
+  Contributions?: number; // New property for commit count
   Post?: number; // New property for post count
   Published?: number; // New property for published count
   Link: string;
@@ -51,19 +51,19 @@ const infinitysosmed: InfinitySosmed = {
       Profile: 'https://avatars.githubusercontent.com/u/85202182?s=400&u=f2b24bbf716b35c63be426fb51dc64d7d6fb0b2e&v=4',
       Pengikut: 5,      
       Repository: 45,
-      Commit: 120, // Hardcoded commit count
+      Contributions: 347, 
       Username: 'rzqh',
       Link: 'https://github.com/rzqh',
     },
   ],
   Instagram: [
     {
-      Profile:
-        'https://instagram.fsub8-2.fna.fbcdn.net/v/t51.2885-19/481830789_1200112991444395_3563037592228029706_n.jpg?_nc_ht=instagram.fsub8-2.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2AFtM9VPM02bK7dIyqJTqNmCGAvcMSGKnNgbcKG24Ow0Puq0Qse6oGyKQnV9bETV3Da8cztSIzoWwCR1InTt1Dxv&_nc_ohc=sqRDa7Va8h8Q7kNvgFHWH4d&_nc_gid=04d056eaca8b40dfb783e389a475610e&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYCVQfx2_aeZmUbJXHRr3uAC5qz8X2MyA7WmCAa_BQLZ0A&oe=67CB1DAA&_nc_sid=7a9f4b',
-      Pengikut: 2.643,
-      Mengikuti: 634,
-      Username: 'archivesc.w2',
-      Link: 'https://www.instagram.com/archivesc.w2/',
+      Profile:        
+        'https://instagram.fsub15-1.fna.fbcdn.net/v/t51.2885-19/457501569_1021415289302473_4651532340859611457_n.jpg?_nc_ht=instagram.fsub15-1.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2AEjQHXII-63OIr2rbzsKiqKFFMLQUroUCgD7q7WFyXqbzu1JWa6CvoOMX7hqRaycbU&_nc_ohc=wLk_enifIMEQ7kNvgE4BuDK&_nc_gid=e03edb1fc14c4ff69b06e33b58d3e5d1&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYCfVIGjUp2U3Rbtu517kDJogYfOGH55e6SW8Nft7BJ84g&oe=67CE364C&_nc_sid=7a9f4b',
+      Pengikut: 1.024,
+      Mengikuti: 1.948,
+      Username: 'rzqhh___',
+      Link: 'https://www.instagram.com/rzqhh___/',
     },
   ],
 };
@@ -268,7 +268,7 @@ const InfiniteScroll: React.FC = () => {
                   {' '}
                   <div>{item.Pengikut} Pengikut</div>
                   {'Mengikuti' in item && <div>{item.Mengikuti} Mengikuti</div>}
-                  {'Commit' in item && <div>{item.Commit} Commit</div>} {/* Display commit count */}
+                  {'Contributions' in item && <div>{item.Contributions} Contributions</div>} {/* Display commit count */}
                   {'Post' in item && <div>{item.Post} Post</div>} {/* Display post count */}
                   {'Published' in item && <div>{item.Published} Published</div>} {/* Display published count */}
                 </div>

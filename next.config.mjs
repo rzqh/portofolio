@@ -25,7 +25,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'instagram.fsub8-2.fna.fbcdn.net',
+        hostname: 'instagram.fsub15-1.fna.fbcdn.net',
       },
     ],
   },
