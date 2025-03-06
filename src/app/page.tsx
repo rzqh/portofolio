@@ -15,7 +15,7 @@ import { AnimatedBeamDemo } from '@/components/fragments/AnimatedBeamDemo';
 import BlobCursor from '@/components/fragments/cursor/BlobCursor';
 import { OrbitingCircles } from '@/components/magicui/orbiting-circles';
 import Icons from '@/components/fragments/Icons';
-import { BlurFadeDemo } from '@/components/fragments/gridimage/BlurFadeDemo';
+// import { BlurFadeDemo } from '@/components/fragments/gridimage/BlurFadeDemo';
 import TrueFocus from '@/components/fragments/textfocus/TrueFocus';
 import Lanyard from '@/components/Lanyard/Lanyard';
 import GitHubCalendar from 'react-github-calendar';
@@ -89,8 +89,8 @@ export default function Page() {
                   'sleep ',
                   'coding ',
                   'healing ',
-                  'prayer',
-                  'nr aerox ',
+                  'praying',
+                  'apalagi eak',
                 ]}
                 mainClassName='text-lg inline-block px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-1 justify-center rounded-lg font-extrabold'
                 staggerFrom={'last'}
@@ -110,7 +110,7 @@ export default function Page() {
             </Markdown>
           </BlurFade>
         </section>
-        <section id='image'>
+        {/* <section id='image'>
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
             <h2 className='text-xl font-bold'>Image Owner</h2>
           </BlurFade>
@@ -118,7 +118,7 @@ export default function Page() {
             <Markdown className='prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert mb-6'></Markdown>
             <BlurFadeDemo />
           </BlurFade>
-        </section>
+        </section> */}
 
         <section id='work'>
           <div className='flex min-h-0 flex-col gap-y-3'>
@@ -178,7 +178,7 @@ export default function Page() {
                 <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                   <Badge
                     key={skill}
-                    className={skill === 'Copilot' ? 'bg-black' : 'bg-zinc-200'}
+                    // className={skill === 'Copilot' ? 'bg-black' : 'bg-zinc-200'}
                   >
                     {skill}
                   </Badge>
@@ -224,10 +224,10 @@ export default function Page() {
                 </BlurFade>
               ))}
             </div>
-            <GitHubCalendar username='whatyuupratama' />
+            <GitHubCalendar username='rzqh' />
           </div>
           <InteractiveHoverButtonDemo
-            link='https://github.com/whatyuupratama'
+            link='https://github.com/rzqh'
             value='More on my Github'
           />
         </section>
@@ -282,13 +282,13 @@ export default function Page() {
         <section id='contact'>
           <div className='grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12'>
             <BlurFade delay={BLUR_FADE_DELAY * 16}>
-              <div className='space-y-3'>
-                <div className='inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm'>
-                  Contact
-                </div>
+              <div className='space-y-3'>                
                 <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
                   Get in Touch
                 </h2>
+                <div className='inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm'>
+                  Contact
+                </div>
               </div>
             </BlurFade>
             <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
