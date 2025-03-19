@@ -22,7 +22,6 @@ import GitHubCalendar from 'react-github-calendar';
 // import { InteractiveGridPatternDemo } from '@/components/fragments/background/InteractiveGridPatternDemo';
 import RotatingText from '@/components/fragments/rotatetxt/RotatingText';
 import InfiniteScroll from '@/components/fragments/infinityscroll/InfiniteScroll';
-
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -53,21 +52,21 @@ export default function Page() {
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <div className='relative flex h-[200px] w-[200px] flex-col items-center justify-center overflow-hidden z-0'>
                   <OrbitingCircles iconSize={20}>
-                    <Icons.typescript />
-                    <Icons.copilot />
+                    <Icons.sql/>
+                    <Icons.docker />
                     <Icons.tailwindcss />
-                    <Icons.react />
-                    <Icons.nextjs />
+                    <Icons.airflow />
+                    <Icons.powerbi />
                   </OrbitingCircles>
                   <Avatar className='size-28 border'>
                     <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                   </Avatar>
                   <OrbitingCircles iconSize={20} radius={70} reverse speed={2}>
-                    <Icons.typescript />
-                    <Icons.copilot />
+                    <Icons.sql />
+                    <Icons.docker />
                     <Icons.tailwindcss />
-                    <Icons.react />
-                    <Icons.nextjs />
+                    <Icons.airflow />
+                    <Icons.powerbi />
                   </OrbitingCircles>
                 </div>
               </BlurFade>
@@ -85,12 +84,12 @@ export default function Page() {
               <span className='font-extrabold text-lg'>Daily</span>{' '}
               <RotatingText
                 texts={[
-                  'eat ',
-                  'sleep ',
-                  'coding ',
-                  'healing ',
+                  'eat',
+                  'sleep',
+                  'coding',
+                  'digital nomad',
                   'praying',
-                  'apalagi eak',
+                  'swag hunter',
                 ]}
                 mainClassName='text-lg inline-block px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-1 justify-center rounded-lg font-extrabold'
                 staggerFrom={'last'}
@@ -133,7 +132,7 @@ export default function Page() {
                 <ResumeCard
                   key={work.company}
                   logoUrl={work.logoUrl}
-                  altText={work.company}
+                  altText={work.company} 
                   title={work.company}
                   subtitle={work.title}
                   badges={work.badges}
@@ -155,13 +154,14 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY * 8 + id * 0.05}
               >
                 <ResumeCard
-                  key={education.school}
-                  href={education.href}
+                  key={education.school}                  
+                  // href={education.href}
                   logoUrl={education.logoUrl}
                   altText={education.school}
                   title={education.school}
                   subtitle={education.degree}
                   period={`${education.start} - ${education.end}`}
+                  description={education.description}
                 />
               </BlurFade>
             ))}
@@ -194,15 +194,13 @@ export default function Page() {
               <div className='flex flex-col items-center justify-center space-y-4 text-center'>
                 <div className='space-y-2'>
                   <div className='inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm'>
-                    My Projects
+                    Projects
                   </div>
                   <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
                     Check out my latest work
                   </h2>
-                  <p className='text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-                    I&apos;ve worked on a variety of projects, from simple
-                    websites to complex web applications. Here are a few of my
-                    favorites.
+                  <p className='text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>                    
+                    I've worked on a variety of projects, from simple AI chatbot to image recognition and recommendation system model. Here are a few of my favorites.
                   </p>
                 </div>
               </div>
@@ -240,14 +238,10 @@ export default function Page() {
                     Certifications
                   </div>
                   <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
-                    I like to learn
+                    Coding growth
                   </h2>
                   <p className='text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed'>
-                    During my studies, I completed MSIB Batch 7, DBS Machine
-                    Learning, HKI Product Digital Certification, and Inbound
-                    Kampus Merdeka Mandiri at Universitas Negeri Malang. I took
-                    15+ courses and interned at three companies, gaining
-                    practical experience and industry insights
+                    lorem ipsum aduh bingung aduh bingung aduh bingung aduh bingung aduh bingung ntar dulu lah ya
                   </p>
                 </div>
               </div>
@@ -261,7 +255,7 @@ export default function Page() {
                   >
                     <HackathonCard
                       title={project.title}
-                      // description={project.description}
+                      // description={projecta}
                       location={project.location}
                       dates={project.dates}
                       image={project.image}
