@@ -22,6 +22,7 @@ import GitHubCalendar from 'react-github-calendar';
 // import { InteractiveGridPatternDemo } from '@/components/fragments/background/InteractiveGridPatternDemo';
 import RotatingText from '@/components/fragments/rotatetxt/RotatingText';
 import InfiniteScroll from '@/components/fragments/infinityscroll/InfiniteScroll';
+import React from 'react';
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -137,7 +138,22 @@ export default function Page() {
                   subtitle={work.title}
                   badges={work.badges}
                   period={`${work.start} - ${work.end ?? 'Present'}`}
-                  description={work.description}
+                  description={Array.isArray(work.description) ? (
+                    <div>
+                      {work.description.map((line, index) => (
+                        <React.Fragment key={index}>
+                          {line.startsWith('-') ? (
+                            <li>{line.slice(1).trim()}</li>
+                          ) : (
+                            <p>{line}</p>
+                          )}                          
+                          {index < work.description.length - 1 && <div style={{ height: '0.5rem' }} />}
+                        </React.Fragment>
+                      ))}
+                    </div>
+                  ) : (
+                    <p>{work.description}</p>
+                  )}
                 />
               </BlurFade>
             ))}
@@ -161,14 +177,29 @@ export default function Page() {
                   title={education.school}
                   subtitle={education.degree}
                   period={`${education.start} - ${education.end}`}
-                  description={education.description}
+                  description={Array.isArray(education.description) ? (
+                    <div>
+                      {education.description.map((line, index) => (
+                        <React.Fragment key={index}>
+                          {line.startsWith('-') ? (
+                            <li>{line.slice(1).trim()}</li>
+                          ) : (
+                            <p>{line}</p>
+                          )}                          
+                          {index < education.description.length - 1 && <div style={{ height: '0.5rem' }} />}
+                        </React.Fragment>
+                      ))}
+                    </div>
+                  ) : (
+                    <p>{education.description}</p>
+                  )}
                 />
               </BlurFade>
             ))}
           </div>
         </section>
         <section id='skills'>
-          <div className='flex min-h-0 flex-col gap-y-3 '>
+          <div className='flex min-h-0 flex-col gap-y-3'>
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <h2 className='text-xl font-bold'>Skills</h2>
             </BlurFade>
@@ -235,13 +266,14 @@ export default function Page() {
               <div className='flex flex-col items-center justify-center space-y-4 text-center'>
                 <div className='space-y-2'>
                   <div className='inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm'>
-                    Certifications
+                    Achievements & Certifications
                   </div>
                   <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
-                    Coding growth
+                    The Journey of Growth
                   </h2>
                   <p className='text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed'>
-                    lorem ipsum aduh bingung aduh bingung aduh bingung aduh bingung aduh bingung ntar dulu lah ya
+                  Through a dedicated journey of growth, I obtained MSIB Batch 6 & 7 completion, Alibaba Cloud: Certified Developer, and undertook 15+ courses. 
+                  This path led me to won competitions, valuable internships and deep industry insights                  
                   </p>
                 </div>
               </div>
