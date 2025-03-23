@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 interface SocialMediaItem {
   Profile: string;
-  Pengikut: number;
-  Mengikuti?: number; // Optional property
+  Followers: number;
+  Following?: number; // Optional property
   Suka?: string; // Optional property
   Repository?: number; // Optional property
   Contributions?: number; // New property for commit count
@@ -30,7 +30,7 @@ const infinitysosmed: InfinitySosmed = {
     {
       Profile:
         'https://media.licdn.com/dms/image/v2/D5603AQGrP3mwFwXY4A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1703486415710?e=1746662400&v=beta&t=ZTOPeAt1pO_7CZvEVFzZLg2ta4tHuRFYVP3OpQRFV-g',
-      Pengikut: 2034,      
+      Followers: 2034,      
       Username: 'Rizqi Hasanuddin',
       Link: 'https://www.linkedin.com/in/rizqi-hasanuddin/',
     },
@@ -39,7 +39,7 @@ const infinitysosmed: InfinitySosmed = {
     {
       Profile:
         'https://miro.medium.com/v2/resize:fill:64:64/1*WpU_NWnQVDEwH9dKi4JjoQ.jpeg',
-      Pengikut: 3,
+      Followers: 3,
       Username: 'Rizqi Hasanuddin',
       Post: 3, 
       Published: 1, 
@@ -49,7 +49,7 @@ const infinitysosmed: InfinitySosmed = {
   Github: [
     {
       Profile: 'https://avatars.githubusercontent.com/u/85202182?s=400&u=f2b24bbf716b35c63be426fb51dc64d7d6fb0b2e&v=4',
-      Pengikut: 5,      
+      Followers: 5,      
       Repository: 45,
       Contributions: 347, 
       Username: 'rzqh',
@@ -60,8 +60,8 @@ const infinitysosmed: InfinitySosmed = {
     {
       Profile:        
         'https://instagram.fsub15-1.fna.fbcdn.net/v/t51.2885-19/457501569_1021415289302473_4651532340859611457_n.jpg?_nc_ht=instagram.fsub15-1.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2AEjQHXII-63OIr2rbzsKiqKFFMLQUroUCgD7q7WFyXqbzu1JWa6CvoOMX7hqRaycbU&_nc_ohc=wLk_enifIMEQ7kNvgE4BuDK&_nc_gid=e03edb1fc14c4ff69b06e33b58d3e5d1&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYCfVIGjUp2U3Rbtu517kDJogYfOGH55e6SW8Nft7BJ84g&oe=67CE364C&_nc_sid=7a9f4b',
-      Pengikut: 1.024,
-      Mengikuti: 1.948,
+      Followers: 1.024,
+      Following: 1.948,
       Username: 'rzqhh___',
       Link: 'https://www.instagram.com/rzqhh___/',
     },
@@ -266,8 +266,8 @@ const InfiniteScroll: React.FC = () => {
                 </div>
                 <div className='flex gap-2 text-xs'>
                   {' '}
-                  <div>{item.Pengikut} Pengikut</div>
-                  {'Mengikuti' in item && <div>{item.Mengikuti} Mengikuti</div>}
+                  <div>{item.Followers} Followers</div>
+                  {'Following' in item && <div>{item.Following} Following</div>}
                   {'Contributions' in item && <div>{item.Contributions} Contributions</div>} {/* Display commit count */}
                   {'Post' in item && <div>{item.Post} Post</div>} {/* Display post count */}
                   {'Published' in item && <div>{item.Published} Published</div>} {/* Display published count */}
