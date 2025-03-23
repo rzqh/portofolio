@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
+import { PaddingIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 
 interface Props {
@@ -25,7 +26,7 @@ export function HackathonCard({
 }: Props) {
   return (
     <li className='relative ml-10 py-4'>
-      <div className='absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full'>
+      <div className='absolute -left-16 flex items-center justify-center bg-white rounded-full bottom-1/4'>
         <Avatar className='border size-12 m-auto'>
           <AvatarImage
             src={image}
