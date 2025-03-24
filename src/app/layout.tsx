@@ -8,6 +8,7 @@ import { Inter as FontSans } from 'next/font/google';
 import './globals.css';
 import Head from 'next/head';
 import IconTitle from '../public/icontitle.svg'; // Pastikan file ini tersedia
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -71,6 +72,7 @@ export default function RootLayout({
         <ThemeProvider attribute='class' defaultTheme='dark'>
           <TooltipProvider delayDuration={0}>
             {children}
+            <SpeedInsights />
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
