@@ -1,10 +1,12 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, lazy } from 'react';
 
-const LazyComponent = React.memo(React.lazy(() => import('./components/LazyComponent')));
+// LazyComponent tetap menggunakan React.lazy
+const LazyComponent = lazy(() => import('./components/LazyComponent'));
 
 function App() {
 	return (
 		<Suspense fallback={<div>Loading...</div>}>
+			{/* Tidak meneruskan ref */}
 			<LazyComponent />
 		</Suspense>
 	);
