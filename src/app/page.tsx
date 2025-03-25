@@ -21,7 +21,7 @@ import Lanyard from '@/components/Lanyard/Lanyard';
 import GitHubCalendar from 'react-github-calendar';
 // import { InteractiveGridPatternDemo } from '@/components/fragments/background/InteractiveGridPatternDemo';
 import RotatingText from '@/components/fragments/rotatetxt/RotatingText';
-import InfiniteScroll from '@/components/fragments/infinityscroll/InfiniteScroll';
+// import InfiniteScroll from '@/components/fragments/infinityscroll/InfiniteScroll';
 import React from 'react';
 const BLUR_FADE_DELAY = 0.04;
 
@@ -74,9 +74,9 @@ export default function Page() {
             </div>
           </div>
           {/* <CardImage /> */}
-          <div style={{ height: '500px', position: 'relative' }}>
+          {/* <div style={{ height: '500px', position: 'relative' }}>
             <InfiniteScroll />
-          </div>
+          </div> */}
         </section>
         <section id='about'>
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
