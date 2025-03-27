@@ -298,7 +298,7 @@ export default function Page() {
               </ul>
 
               <InteractiveHoverButtonDemo
-                link='https://www.linkedin.com/in/rizqi-hasanuddin/'
+                link='https://www.linkedin.com/in/rizqi-hasanuddin/details/certifications/'
                 value='More on my LinkedIn'
               />
             </BlurFade>
@@ -308,13 +308,15 @@ export default function Page() {
         <section id='contact'>
           <div className='grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12'>
             <BlurFade delay={BLUR_FADE_DELAY * 16}>
+              <a href='https://linkedin.com/in/rizqi-hasanuddin' target='_blank' rel='noopener noreferrer'>
+                  <div className='inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm'>
+                    Contact
+                  </div>
+              </a>
               <div className='space-y-3'>                
                 <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
                   Get in Touch
-                </h2>
-                <div className='inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm'>
-                  Contact
-                </div>
+                </h2>                
               </div>
             </BlurFade>
             <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
