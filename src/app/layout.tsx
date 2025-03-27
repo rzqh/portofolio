@@ -7,7 +7,6 @@ import type { Metadata } from 'next';
 import { Inter as FontSans } from 'next/font/google';
 import './globals.css';
 import Head from 'next/head';
-import IconTitle from '../public/icontitle.svg'; // Pastikan file ini tersedia
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const fontSans = FontSans({
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
     yandex: '',
   },
   icons: {
-    icon: '/icontitle.svg', // Pastikan ini file yang ada atau diubah ke file yang sesuai
+    icon: '/icontitle.svg',
   },
 };
 
@@ -61,7 +60,6 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <Head>
         <link rel='icon' href='/icontitle.svg' />{' '}
-        {/* Perbaiki penulisan href */}
       </Head>
       <body
         className={cn(
