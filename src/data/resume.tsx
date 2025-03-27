@@ -222,7 +222,7 @@ export const DATA = {
       mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg',
       links: [
         {
-          title: 'Show credential',
+          title: 'Credential',
           icon: <SquareArrowOutUpRight className='h-4 w-4' />,
           href: 'https://academy.dqlab.id/Certificate_check/result/DQLABPRJ10JWOCOV',
         },
@@ -237,7 +237,7 @@ export const DATA = {
       mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg',
       links: [
         {
-          title: 'Show credential',
+          title: 'Credential',
           icon: <SquareArrowOutUpRight className='h-4 w-4' />,
           href: 'https://media.licdn.com/dms/image/v2/D562DAQGVoQwcrFiMBw/profile-treasury-image-shrink_1920_1920/profile-treasury-image-shrink_1920_1920/0/1711275301517?e=1743634800&v=beta&t=7hx5t8vDHaaQ3Kr8cl-kCHvCwG1Be20vQyBgc-HHANM',
         },
