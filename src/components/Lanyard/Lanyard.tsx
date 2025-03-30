@@ -38,50 +38,79 @@ export default function Lanyard({
   fov = 20,
   transparent = true,
 }: LanyardProps) {
-  return (
-    <div className='relative z-0 w-sc w-screen h-screen flex justify-center items-center transform scale-100 origin-center'>
-      <Canvas
-        camera={{ position, fov }}
-        gl={{ alpha: transparent }}
-        onCreated={({ gl }) =>
-          gl.setClearColor(new THREE.Color(0x000000), transparent ? 0 : 1)
+  const lanyardRef = useRef<HTMLDivElement>(null); // Ref untuk elemen lanyard
+  const [isVisible, setIsVisible] = useState(false); // State untuk memantau apakah elemen terlihat
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true); // Elemen terlihat di viewport
         }
-      >
-        <ambientLight intensity={Math.PI} />
-        <Physics gravity={gravity} timeStep={1 / 60}>
-          <Band />
-        </Physics>
-        <Environment blur={0.75}>
-          <Lightformer
-            intensity={1}
-            color='white'
-            position={[0, -1, 5]}
-            rotation={[0, 0, Math.PI / 3]}
-            scale={[100, 0.1, 1]}
-          />
-          <Lightformer
-            intensity={2}
-            color='white'
-            position={[-1, -1, 1]}
-            rotation={[0, 0, Math.PI / 3]}
-            scale={[100, 0.1, 1]}
-          />
-          <Lightformer
-            intensity={2}
-            color='white'
-            position={[1, 1, 1]}
-            rotation={[0, 0, Math.PI / 3]}
-            scale={[100, 0.1, 1]}
-          />
-          <Lightformer
-            intensity={3}
-            color='white'
-            position={[-10, 0, 14]}
-            rotation={[0, Math.PI / 2, Math.PI / 3]}
-            scale={[100, 10, 1]}
-          />
-        </Environment>
-      </Canvas>
+      },
+      { threshold: 0.1 } // 10% elemen terlihat
+    );
+
+    if (lanyardRef.current) {
+      observer.observe(lanyardRef.current);
+    }
+
+    return () => {
+      if (lanyardRef.current) {
+        observer.unobserve(lanyardRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={lanyardRef} // Tambahkan ref ke elemen pembungkus
+      className='relative z-0 w-sc w-screen h-screen flex justify-center items-center transform scale-100 origin-center'
+    >
+      {isVisible && ( // Render Canvas hanya jika elemen terlihat
+        <Canvas
+          camera={{ position, fov }}
+          gl={{ alpha: transparent }}
+          onCreated={({ gl }) =>
+            gl.setClearColor(new THREE.Color(0x000000), transparent ? 0 : 1)
+          }
+        >
+          <ambientLight intensity={Math.PI} />
+          <Physics gravity={gravity} timeStep={1 / 60}>
+            <Band />
+          </Physics>
+          <Environment blur={0.75}>
+            <Lightformer
+              intensity={1}
+              color='white'
+              position={[0, -1, 5]}
+              rotation={[0, 0, Math.PI / 3]}
+              scale={[100, 0.1, 1]}
+            />
+            <Lightformer
+              intensity={2}
+              color='white'
+              position={[-1, -1, 1]}
+              rotation={[0, 0, Math.PI / 3]}
+              scale={[100, 0.1, 1]}
+            />
+            <Lightformer
+              intensity={2}
+              color='white'
+              position={[1, 1, 1]}
+              rotation={[0, 0, Math.PI / 3]}
+              scale={[100, 0.1, 1]}
+            />
+            <Lightformer
+              intensity={3}
+              color='white'
+              position={[-10, 0, 14]}
+              rotation={[0, Math.PI / 2, Math.PI / 3]}
+              scale={[100, 10, 1]}
+            />
+          </Environment>
+        </Canvas>
+      )}
     </div>
   );
 }
