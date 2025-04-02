@@ -59,7 +59,7 @@ const infinitysosmed: InfinitySosmed = {
   Instagram: [
     {
       Profile:        
-        'https://instagram.fsub15-1.fna.fbcdn.net/v/t51.2885-19/457501569_1021415289302473_4651532340859611457_n.jpg?_nc_ht=instagram.fsub15-1.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2AEjQHXII-63OIr2rbzsKiqKFFMLQUroUCgD7q7WFyXqbzu1JWa6CvoOMX7hqRaycbU&_nc_ohc=wLk_enifIMEQ7kNvgE4BuDK&_nc_gid=e03edb1fc14c4ff69b06e33b58d3e5d1&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYCfVIGjUp2U3Rbtu517kDJogYfOGH55e6SW8Nft7BJ84g&oe=67CE364C&_nc_sid=7a9f4b',
+        '/gwe.jpeg',
       Followers: 1.024,
       Following: 1.948,
       Username: 'rzqhh___',
