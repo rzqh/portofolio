@@ -60,7 +60,7 @@ export default function Page() {
                     <Icons.powerbi />
                   </OrbitingCircles>
                   <Avatar className='size-28 border'>
-                    <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                    <AvatarImage alt="Rizqi Hasanuddin" src={DATA.avatarUrl} />
                   </Avatar>
                   <OrbitingCircles iconSize={20} radius={70} reverse speed={2}>
                     <Icons.sql />

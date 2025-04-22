@@ -17,29 +17,16 @@ export async function generateMetadata({
     slug: string;
   };
 }): Promise<Metadata | undefined> {
-  let post = await getPost(params.slug);
+  const post = await getPost(params.slug);
 
-  let {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    image,
-  } = post.metadata;
+  if (!post) {
+    return notFound();
+  }
 
   return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: 'article',
-      publishedTime,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-    },
+    title: `${post.metadata.title} - Rizqi Hasanuddin`,
+    description: post.metadata.summary || 'Blog post by Rizqi Hasanuddin.',
+    keywords: `Rizqi, Rizqi Hasanuddin, Blog, ${post.metadata.title}`,
   };
 }
 
