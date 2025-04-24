@@ -166,6 +166,21 @@ export const DATA = {
       ],
       image: '',
     },
+    {
+      title: 'Personal Finance Tracker Dashboard',
+      active: true,
+      description:
+        'On-progress',
+      technologies: ['Airtable', 'Javascript'],
+      links: [
+        {
+          type: 'Airtable',
+          href: 'https://airtable.com/',
+          icon: <Icons.globe className='size-3' />,
+        },
+      ],
+      image: '',
+    },
   ],
   hackathons: [
     {
