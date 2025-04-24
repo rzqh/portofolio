@@ -170,7 +170,7 @@ export const DATA = {
       title: 'Personal Finance Tracker Dashboard',
       active: true,
       description:
-        'On-progress',
+        'On-progress. Currently working on: automation to get reminder via email/whatsapp every day at 7pm & 4am, create dummy data and "Savings" dashboard page',
       technologies: ['Airtable', 'Javascript'],
       links: [
         {
