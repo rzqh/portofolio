@@ -138,6 +138,7 @@ export const DATA = {
   projects: [
     {
       title: 'Catloris: Gamified Nutrition Tracking App',
+      href: 'https://github.com/C242-PS149',
       active: true,
       description:
         'Catloris is an innovative Android app that turns calorie tracking into a fun and motivating experience by integrating gamification elements of challenges, rewards, and cute cat as body condition indicators, as well as utilizing AI to detect food nutrients and a personalized food recommendation system, thus helping users reach their daily nutrition goals more effectively and interactively.',
@@ -150,9 +151,11 @@ export const DATA = {
         },
       ],
       image: '',
+      video: 'https://portfolio-sincan.s3.ap-southeast-2.amazonaws.com/Screen+Recording+2024-10-09+at+14.57.57.mov',
     },    
     {
       title: 'Air Quality Streamlit Dashboard: Wanliu Station',
+      href: 'https://rzqh-airquality-dicoding-submission.streamlit.app/',
       active:true,
       description:
         'This dashboard presents an analysis of air quality data, especially at the PM2.5 level from Wanliu station. This project aims to reveal various insights such as dynamics, seasonal variations and the impact of various weather conditions on air quality. Insights from this analysis can be useful for environmental studies and public health monitoring.',
@@ -165,9 +168,11 @@ export const DATA = {
         },
       ],
       image: '',
+      video: 'https://portfolio-sincan.s3.ap-southeast-2.amazonaws.com/Screen+Recording+2024-10-09+at+14.57.57.mov',
     },
     {
       title: 'Personal Finance Tracker Dashboard',
+      href: 'https://airtable.com/',
       active: true,
       description:
         'On-progress. Currently working on: automation to get reminder via email/whatsapp every day at 7pm & 4am, create dummy data and "Savings" dashboard page',
@@ -180,6 +185,7 @@ export const DATA = {
         },
       ],
       image: '',
+      video: 'https://portfolio-sincan.s3.ap-southeast-2.amazonaws.com/Screen+Recording+2024-10-09+at+14.57.57.mov',
     },
   ],
   hackathons: [

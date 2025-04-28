@@ -32,7 +32,6 @@ export function ProjectCard({
   title,
   href,
   description,
-
   tags,
   link,
   image,
