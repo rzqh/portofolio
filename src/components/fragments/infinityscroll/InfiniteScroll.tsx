@@ -29,7 +29,7 @@ const infinitysosmed: InfinitySosmed = {
   Linkedin: [
     {
       Profile:
-        'https://media.licdn.com/dms/image/v2/D5603AQGrP3mwFwXY4A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1703486415710?e=1746662400&v=beta&t=ZTOPeAt1pO_7CZvEVFzZLg2ta4tHuRFYVP3OpQRFV-g',
+        'https://rzqhhh.sirv.com/portofolio/linkedin-pp.jpeg',
       Followers: 2034,      
       Username: 'Rizqi Hasanuddin',
       Link: 'https://www.linkedin.com/in/rizqi-hasanuddin/',
