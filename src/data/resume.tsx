@@ -187,6 +187,23 @@ export const DATA = {
       image: '',
       video: 'https://portfolio-sincan.s3.ap-southeast-2.amazonaws.com/Screen+Recording+2024-10-09+at+14.57.57.mov',
     },
+    {
+      title: 'Institut Asia New Student Admission Chatbot',
+      href: 'https://rzqh.github.io/landingPageChatbot/',
+      active: true,
+      description:
+        'On-progress. improving UI/UX and adding more features',
+      technologies: ['Dialogflow', 'Node.js', 'Express.js', 'Looker Studio', 'PostgreSQL'],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://rzqh.github.io/landingPageChatbot/',
+          icon: <Icons.globe className='size-3' />,
+        },
+      ],
+      image: '',
+      video: 'https://portfolio-sincan.s3.ap-southeast-2.amazonaws.com/Screen+Recording+2024-10-09+at+14.57.57.mov',
+    },
   ],
   hackathons: [
     {
