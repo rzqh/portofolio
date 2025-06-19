@@ -55,7 +55,7 @@ export const DATA = {
       location: 'On-site',
       title: 'Jakarta - On-site | Data Engineer Intern',
       logoUrl:
-        'https://media.licdn.com/dms/image/v2/C560BAQHO5hB77T9eag/company-logo_200_200/company-logo_200_200/0/1630666447462/kgxpresslogistics_logo?e=1749686400&v=beta&t=DZ8vldnZ0M3_kF_ci241NoAlG6-V3a7E2b3dEoMLRwQ',
+        'https://rzqhhh.sirv.com/portofolio/kgxpresslogistics_logo.jpeg',
       start: 'Feb 2024',
       end: 'Jul 2024',
       description: [
@@ -80,7 +80,7 @@ export const DATA = {
       location: 'On-site',
       title: 'Malang - On-site | Network Engineer & IT Support Intern',
       logoUrl:
-        'https://media.licdn.com/dms/image/v2/C4D0BAQF39HHlC_CDBg/company-logo_200_200/company-logo_200_200/0/1631341976149?e=1749686400&v=beta&t=auG5QmpntEYxGkrtUr-Yo9gYDcSfBzkymgBnJlqcGzA',
+        'https://rzqhhh.sirv.com/portofolio/ub.jpeg',
       start: 'Oct 2019',
       end: 'Mar 2020',
       description: [
@@ -97,7 +97,7 @@ export const DATA = {
       school: 'Bangkit Academy led by Google, GoTo & Traveloka',      
       degree: "Machine Learning Cohort",
       logoUrl:
-        'https://media.licdn.com/dms/image/v2/D560BAQGVomgVddrtBA/company-logo_200_200/B56ZWOrFbWGUAM-/0/1741855415072/bangkit_academy_logo?e=1749686400&v=beta&t=m_mAw9VUVny9jRl6HKXpzYC3-EPMFpLBvcvZ8fYSgYk',
+        'https://rzqhhh.sirv.com/portofolio/bangkit.jpeg',
       start: '2024',
       end: '2025',
       description:[
@@ -226,7 +226,7 @@ export const DATA = {
       dates: 'Oct 2024',
       location: 'Stanford University & DeepLearning.AI',
       image:
-        'https://media.licdn.com/dms/image/v2/C560BAQHr9suxyJBXMw/company-logo_100_100/company-logo_100_100/0/1635534378870/stanford_university_logo?e=1747872000&v=beta&t=0LrXZ_hQTjBHea5a_cQ8UsLEqJpyYsneuNSx6rwPbzk',
+        'https://rzqhhh.sirv.com/portofolio/stanford.jpeg',
       mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg',
       links: [
         {
@@ -241,7 +241,7 @@ export const DATA = {
       dates: 'Oct 2023',
       location: 'Alibaba Cloud',
       image:
-        'https://media.licdn.com/dms/image/v2/D560BAQEZecjjDTVXJA/company-logo_100_100/company-logo_100_100/0/1723709190350/alibaba_cloud_computing_company_logo?e=1747872000&v=beta&t=1HfcJRGwW453WIWiEOdy7emgF4Yuo3RIVuwc3_vBpYA',
+        'https://rzqhhh.sirv.com/portofolio/alibaba.jpeg',
       mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg',
       links: [
         {
@@ -256,7 +256,7 @@ export const DATA = {
       dates: 'Aug 2023',
       location: 'DQLab',
       image:
-        'https://media.licdn.com/dms/image/v2/C510BAQFURjtnIHVUAA/company-logo_100_100/company-logo_100_100/0/1631435607588/dqlab_logo?e=1747872000&v=beta&t=wRF3D4QYeY_I6-dqVALW7xuBeKWVL--uJpREPKJsIus',
+        'https://rzqhhh.sirv.com/portofolio/dqlab.jpeg',
       mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg',
       links: [
         {
@@ -271,7 +271,7 @@ export const DATA = {
       dates: 'Jun 2023',
       location: 'MoECRT',
       image:
-        'https://media.licdn.com/dms/image/v2/C510BAQGHhZ0tqET3IA/company-logo_200_200/company-logo_200_200/0/1631308035829?e=1748476800&v=beta&t=6m1cUwRbL4Ova3xyqRqQRhUWjkyH_W0kS0bIgEJDJyM',
+        'https://rzqhhh.sirv.com/portofolio/dikti.jpeg',
       mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg',
       links: [
         {
