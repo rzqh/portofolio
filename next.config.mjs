@@ -27,6 +27,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'instagram.fsub15-1.fna.fbcdn.net',
       },
+      {
+        protocol: 'https',
+        hostname: 'rzqhhh.sirv.com',
+      },
     ],
   },
 };
