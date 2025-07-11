@@ -50,6 +50,19 @@ export const DATA = {
 
   work: [
     {
+      company: 'id/x partners',
+      badges: [],
+      location: 'remote',
+      title: 'Jakarta - Remote | Data Engineer Intern',
+      logoUrl:
+        'https://rzqhhh.sirv.com/portofolio/idx-partners.png',
+      start: 'Jul 2025',
+      end: 'Present',
+      description: [
+        'Project Based Internship: Data Engineer at id/x partners, a leading data-driven venture capital firm in Southeast Asia.',        
+      ],      
+    },
+    {
       company: 'PT. Sirkulasi Kompas Gramedia',
       badges: [],
       location: 'On-site',
