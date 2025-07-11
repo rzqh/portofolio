@@ -53,7 +53,7 @@ export const DATA = {
       company: 'id/x partners',
       badges: [],
       location: 'remote',
-      title: 'Jakarta - Remote | Data Engineer Intern',
+      title: 'Central Jakarta - Remote | Data Engineer Intern',
       logoUrl:
         'https://rzqhhh.sirv.com/portofolio/idx-partners.png',
       start: 'Jul 2025',
@@ -66,7 +66,7 @@ export const DATA = {
       company: 'PT. Sirkulasi Kompas Gramedia',
       badges: [],
       location: 'On-site',
-      title: 'Jakarta - On-site | Data Engineer Intern',
+      title: 'Central Jakarta - On-site | Data Engineer Intern',
       logoUrl:
         'https://rzqhhh.sirv.com/portofolio/kgxpresslogistics_logo.jpeg',
       start: 'Feb 2024',
