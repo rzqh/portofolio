@@ -59,7 +59,7 @@ export const DATA = {
       start: 'Jul 2025',
       end: 'Present',
       description: [
-        'Project Based Internship: Data Engineer at id/x partners, a leading data-driven venture capital firm in Southeast Asia.',        
+        'Project Based Intern: Data Engineer at id/x partners, a leading data and analytics consulting firm in Southeast Asia',        
       ],      
     },
     {
